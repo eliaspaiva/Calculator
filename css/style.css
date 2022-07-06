@@ -7,6 +7,9 @@
 
 body {
   background-color: rgb(230, 230, 230);
+  font-family: 'Fira Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .page-wrapper {
@@ -18,7 +21,7 @@ body {
   background-color: rgba(230, 230, 230, 1.808);
   box-shadow: -8px -5px 9px -1px rgba(255, 255, 255), 2px 5px 5px 5px rgba(153, 153, 153);
   width: 80%;
-  margin-top: 3rem;
+  margin: 3rem 0;
   justify-content: center;
   border-radius: 30px;
 }
@@ -52,6 +55,8 @@ body {
 }
 
 .button {
+  width: 50px;
+  max-width: 50px;
   padding: 0.5rem 1rem;
   border-radius: 100%;
   border: 1px solid rgb(230, 230, 230);
