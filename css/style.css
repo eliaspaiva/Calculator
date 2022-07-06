@@ -23,6 +23,11 @@ body {
   border-radius: 30px;
 }
 
+.input-calc-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
 #input-calc {
   background-color: rgb(230, 230, 230);
   border: 1px solid rgb(230, 230, 230);
@@ -30,7 +35,7 @@ body {
   inset -5px -5px 10px white;
   padding: 1.3rem 0.8rem;
   border-radius: 2rem;
-  width: 50%;
+  width: 75%;
   margin: 2rem auto 0 auto;
 }
 
@@ -41,7 +46,11 @@ body {
   margin: 2rem 0;
 }
 
-.calc-buttons-wrapper .calc-buttons button {
+.button {
   padding: 1rem;
   border-radius: 50%;
+}
+
+.button .orange {
+  color: rgb(255, 88, 50);
 }
