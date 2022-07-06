@@ -14,8 +14,9 @@ body {
 }
 
 .calc-wrapper {
-  background-color: rgba(160, 160, 160, 1.808);
-  width: 70%;
+  background-color: rgba(230, 230, 230, 1.808);
+  box-shadow: -10px -5px 10px 1px rgba(255, 255, 255), 2px 5px 5px 5px rgba(153, 153, 153);
+  width: 80%;
   display: flex;
   margin-top: 3rem;
   justify-content: center;
@@ -24,8 +25,10 @@ body {
 }
 
 #input-calc {
-  background-color: rgb(173, 173, 173);
-  padding: ;
+  background-color: rgb(230, 230, 230);
+  box-shadow: inset 5px 5px 10px rgb(138, 138, 138), 
+  inset -5px -5px 10px rgb(252, 252, 252);
+  padding: 1rem 0.5rem;
   border-radius: 2rem;
   width: 100%;
   margin-top: 2rem;
