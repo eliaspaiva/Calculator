@@ -40,10 +40,15 @@ body {
 }
 
 .calc-buttons-wrapper {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 2rem 0;
+}
+
+.calc-buttons-row {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .button {
