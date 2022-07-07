@@ -10,24 +10,30 @@ const number7 = document.querySelector('.number7');
 const number8 = document.querySelector('.number8');
 const number9 = document.querySelector('.number9');
 const input = document.getElementById('input-calc');
-let accumulater = 0;
 let numberTypedIn = 0;
+let teste = [];
+
 
 //event listeners
 input.addEventListener('input', () => {
   numberTypedIn = input.value;
-  console.log(numberTypedIn);
+  string = teste.join('');
+  console.log(string);
+  console.log(`${numberTypedIn}${string}`);
 });
 
 number0.addEventListener('click', ()=> {
   input.value = number0.innerHTML
-  accumulater = input.value;
-  if (numberTypedIn > 0) alert(`${numberTypedIn}${accumulater}`);
-
-})
+  zero = input.value;
+  teste.push(zero)
+  console.log(teste);
+  })
 
 number1.addEventListener('click', () => {
   input.value = number1.innerHTML;
+  one = input.value;
+  teste.push(one);
+  console.log(teste);
 });
 
 number2.addEventListener('click', () => {
