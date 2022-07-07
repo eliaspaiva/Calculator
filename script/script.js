@@ -13,6 +13,10 @@ const input = document.getElementById('input-calc');
 let accumulater = 0;
 
 //event listeners
+input.addEventListener('keypress', () => {
+  console.log(input.value);
+});
+
 number0.addEventListener('click', ()=> {
   input.value = number0.innerHTML
   accumulater = input.value;
@@ -53,4 +57,5 @@ number8.addEventListener('click', () => {
 number9.addEventListener('click', () => {
   input.value = number9.innerHTML;
 });
+
 
