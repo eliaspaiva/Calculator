@@ -11,15 +11,19 @@ const number8 = document.querySelector('.number8');
 const number9 = document.querySelector('.number9');
 const input = document.getElementById('input-calc');
 let accumulater = 0;
+let numberTypedIn = 0;
 
 //event listeners
-input.addEventListener('keypress', () => {
-  console.log(input.value);
+input.addEventListener('input', () => {
+  numberTypedIn = input.value;
+  console.log(numberTypedIn);
 });
 
 number0.addEventListener('click', ()=> {
   input.value = number0.innerHTML
   accumulater = input.value;
+  if (numberTypedIn > 0) alert(`${numberTypedIn}${accumulater}`);
+
 })
 
 number1.addEventListener('click', () => {
