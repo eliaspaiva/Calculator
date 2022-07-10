@@ -9,26 +9,38 @@ const number6 = document.querySelector('.number6');
 const number7 = document.querySelector('.number7');
 const number8 = document.querySelector('.number8');
 const number9 = document.querySelector('.number9');
+const clear = document.querySelector('.clear');
 const input = document.getElementById('input-calc');
 const numberTypedIn = input.value;
 let numbersClickedOn = [];
+let element = "";
+const array = [];
 
 
 //event listeners
-input.addEventListener('input', () => {
-  const numberTypedIn = input.value;
-  numbersClickedOn.push(numberTypedIn);
-  string = numbersClickedOn.join('');
-  input.value = string;
+clear.addEventListener('click', () => {
+const empty = arrayToBeRapleced => (arrayToBeRapleced.length = 0);
+empty(numbersClickedOn);
+input.value = 0;
 });
 
+input.addEventListener('input', () => {
+  const inputValue = input.value;
+  array.push(inputValue);
+  console.log(array);
+  const teste = array.join(',');
+  input.value = teste;
+});
+
+// 
 number0.addEventListener('click', ()=> {
   input.value = number0.innerHTML
   const zero = input.value;
   numbersClickedOn.push(zero)
   string = numbersClickedOn.join('');
   input.value = string;
-  })
+  console.log(numbersClickedOn);
+})
 
 number1.addEventListener('click', () => {
   input.value = number1.innerHTML;
@@ -36,6 +48,8 @@ number1.addEventListener('click', () => {
   numbersClickedOn.push(one);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number2.addEventListener('click', () => {
@@ -44,6 +58,8 @@ number2.addEventListener('click', () => {
   numbersClickedOn.push(two);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number3.addEventListener('click', () => {
@@ -52,6 +68,8 @@ number3.addEventListener('click', () => {
   numbersClickedOn.push(three);
   string = numbersClickedOn.join('');
   input.value = string;
+    console.log(numbersClickedOn);
+
 });
 
 number4.addEventListener('click', () => {
@@ -60,6 +78,8 @@ number4.addEventListener('click', () => {
   numbersClickedOn.push(four);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number5.addEventListener('click', () => {
@@ -68,6 +88,8 @@ number5.addEventListener('click', () => {
   numbersClickedOn.push(five);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number6.addEventListener('click', () => {
@@ -76,6 +98,8 @@ number6.addEventListener('click', () => {
   numbersClickedOn.push(six);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number7.addEventListener('click', () => {
@@ -84,6 +108,8 @@ number7.addEventListener('click', () => {
   numbersClickedOn.push(seven);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
+
 });
 
 number8.addEventListener('click', () => {
@@ -92,6 +118,8 @@ number8.addEventListener('click', () => {
   numbersClickedOn.push(eight);
   string = numbersClickedOn.join('');
   input.value = string;
+    console.log(numbersClickedOn);
+
 });
 
 number9.addEventListener('click', () => {
@@ -100,6 +128,7 @@ number9.addEventListener('click', () => {
   numbersClickedOn.push(three);
   string = numbersClickedOn.join('');
   input.value = string;
+  console.log(numbersClickedOn);
 });
 
 
